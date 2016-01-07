@@ -9,6 +9,6 @@ for oneFile in $(ls $videoFolder -1 | sed s/^.*\\/\//)
 do
 	videotype=$(echo "$oneFile"|sed "s/^.*\.\(.*\)\.mp4$/\1/g")
 	name=$(echo "$oneFile"|sed "s/\(^.*\)\..*\.mp4$/\1/g")
-	echo "<P><A HREF=\"milkvr://sideload/?url=$urlBase$oneFile&video_type=$videotype\">$name</A>"
+	echo "<P><A HREF=\"milkvr://sideload/?url=$urlBase$oneFile&video_type=$videotype\">$name</A></P>"
 done
 echo "</BODY></HTML>"
